@@ -1,7 +1,7 @@
 
 # React Tutorial
 
-1. [React Fundamental Concepts](https://github.com/tareksabbir/react-project-installation-notes/react-fundamental-topic)
+1. [React Fundamental Concepts](https://github.com/tareksabbir/react-project-installation-notes/tree/fundamentals)
 2. [React Advanced concepts](https://github.com/tareksabbir/react-project-installation-notes/tree/Advance-topic)
 
 # Installation for client side with website link
