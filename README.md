@@ -125,9 +125,15 @@ npx tailwindcss init -p
 2. Replace content line in tailwind.config.js file
 
 ```
-content: [
+module.exports = {
+  content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
 ```
 
 3. Add tailwind directives to your index.css file. Then injoy & npm run start.
