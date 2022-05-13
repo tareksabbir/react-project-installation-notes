@@ -1,7 +1,7 @@
 
 # React Tutorial
 
-1. [React Inastallation](https://github.com/tareksabbir/react-project-installation-notes/installation)
+1. [React Inastallation](https://github.com/tareksabbir/react-project-installation-notes/tree/installation)
 2. [React Fundamental Concepts](https://github.com/tareksabbir/react-project-installation-notes/react-fundamental-topic)
 3. [React Advanced concepts](https://github.com/tareksabbir/react-project-installation-notes/tree/Advance-topic)
 
