@@ -1,354 +1,252 @@
 
 # React Tutorial
 
-1. [React Inastallation](https://github.com/tareksabbir/react-project-installation-notes/installation)
-2. [React Fundamental Concepts](https://github.com/tareksabbir/react-project-installation-notes/react-fundamental-topic)
-3. [React Advanced concepts](https://github.com/tareksabbir/react-project-installation-notes/tree/Advance-topic)
+1. [React Fundamental Concepts](https://github.com/tareksabbir/react-project-installation-notes/react-fundamental-topic)
+2. [React Advanced concepts](https://github.com/tareksabbir/react-project-installation-notes/tree/Advance-topic)
 
-# React Fundamental
+# Installation for client side with website link
 
-[What is react?](#what-is-react)
+1.  [Create React App](#creact-react-app)
+2.  [Router](#react-router)
+3.  [React Bootstrap](#react-bootstrap)
+4.  [React tailwind](#react-taillwind)
+5.  [Firebase](#firebase)
+6.  [React Firebase Hooks](#react-firebase-hooks)
+7.  [React hooks form](#React-hooks-form)
+8.  [React Icons](react-icons)
+9.  [react-hot-toast](#react-hot-toast)
+10. [Rechart](#react-recharts)
 
-[Why we use React?](#why-we-use-react)
+# Installation for server side with website link
 
-[Benefits of single page aplications.](#benefits-of-single-page-aplications)
+1. [Server setup with mongodb atlas](#server-setup-with-mongodb-atlas)
+2. [Express](#express)
+3. [Nodemon](#nodemon)
+4. [Cors](#cors)
+5. [Mongodb](#mongodb)
+6. [dotenv](#dotenv)
 
-[React JSX](#what-is-jsx)
+# Herouku deploy
 
-[React Component](#what-is-component)
+### One Time for your computer
 
-[React properties](#what-is-react-properties)
+1. Create Herouku account.
+2. Install herouku CLI.
+3. Download & install herouku app.
+4. Check some task on client side.
+5. herouku login.
+6. herouku create.
+7. git push herouku main.
 
-[React Hooks](#what-is-react-hooks)
+### For each Projects one time.
 
-[React state](#what-is-react-state)
+1. herouku create.
+2. Make sure your git add, git commit, git push up to date.
+3. git push herouku main.
+4. Go to Dashboard > Current Projects > Settings > Reveal Config Vars and add .env file.
 
-[Event in react](#what-is-event-in-react)
+### Update Server with new changes.
 
-[Add css in react jsx](#add-css-in-react-jsx)
+1. Make Change.
+2. Make sure your git add, git commit, git push up to date.
+3. git push herouku main.
 
-### What is react?
+### Connect server with client side & deply firebase.
 
-<small><a href="#react-tutorial">Top</a></small>
-<small><a href="#why-we-use-react">Next</a></small>
+1. Replace locall host with herouku link.
+2. npm run build.
+3. firebase deploy.
 
-> React is a flexible, efficient, open-sourse JavaScript library for building user interfaces.
+# Get Started
 
-### Why we use React?
-
-<small><a href="#react-tutorial">Top</a></small>
-<small><a href="#benefits-of-single-page-aplications">Next</a></small>
-
-> React allows developers to create large web applications that can change data, without reloading the page. The main purpose of React is to be fast, scalable, and simple. It works only on user interfaces in the application.
-
-### Benefits of single page aplications.
-
-<small><a href="#react-tutorial">Top</a></small>
-<small><a href="#what-is-jsx">Next</a></small>
-
-1. Quick Loading Time.
-2. Seamless User Experience.
-3. Ease in Building Feature-rich Apps.
-4. Uses Less Bandwidth.
-
-### What is JSX?
-
-<small><a href="#react-tutorial">Top</a></small>
-<small><a href="#what-is-component">Next</a></small>
-
-> JSX stands for JavaScript XML. JSX allows us to write HTML in React. JSX makes it easier to write and add HTML in React. Return a single element (only one parent element)
-
-[JSX Element](#jsx-element) | [JavaScript in JSX](#javascript-in-jsx) | [JSX Expressions](#jsx-expressions) | [JSX attributes](#jsx-attributes) | [JSX Functions](#jsx-functions) | [JSX Conditional rendering](#jsx-conditional-rendering).
-
-#### JSX Element
+### [Creact React App](https://react-bootstrap.github.io/)
 
 ```Js
-let element = <h1>Hello, world!</h1>;
-let emptyHeading = <h1 />;
+npx create-react-app my-app
 ```
 
-#### JSX Expressions
+### [React Router](https://reactrouter.com/docs/en/v6/getting-started/overview)
 
 ```Js
-let name = 'Josh Perez';
-let element = <h1>Hello, {name}</h1>;
-
-function fullName(firstName, lastName) {
-  return firstName + ' ' + lastName;
-}
-let element = <h1>Hello, {fullName('Julie', 'Johnson')}</h1>
+npm install react-router-dom@6
 ```
 
-#### JSX attributes
+### [React Bootstrap](https://react-bootstrap.github.io/)
 
-```Js
-const element = <img src={user.avatarUrl} />;
-const element = <button className="btn">Click me</button>;
-```
+> 2 Way to install react bootstrap to your projects
 
-#### JSX Functions
+1. Install bootstrap with cdn (Place bootstrap cdn link in index file.)
+1. Install bootstrap with npm & place css link in your app.js or index.js.
 
-```Js
-name() {
-  return "Julie";
-}
-
-return (
-  <h1>
-    Hi {name()}!
-  </h1>
-)
-```
-
-#### JSX Conditional rendering
-
-```Js
-import React from "react";
-export default function Weather(props) {
-  if (props.temperature >= 20) {
-    return (
-      <p>
-        It is {props.temperature}°C (Warm) in {props.city}
-      </p>
-    );
-  } else {
-    return (
-      <p>
-        It is {props.temperature}°C in {props.city}
-      </p>
-    );
-  }
-}
+### installation with npm command
 
 ```
-
-#### Javascript in JSX
-
-```Js
-function App(){
-    const name = 'Mike'
-    return (
-      <>
-          <h1>Hello {name}</h1>
-          <p>{name === 'Mike' ? '(admin)': '(user)'}</p>
-      </>
-    )
-}
+npm install react-bootstrap bootstrap@5.1.3
 ```
 
-### What is component?
+### Import CSS file
 
-<small><a href="#react-tutorial">Top</a></small>
-<small><a href="#what-is-react-properties">Next</a></small>
-
-> Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML. Components come in two types, Class components and Function components.
-
-#### Class Components
-
-> Class components can define functions that will execute during the component's lifecycle.
-
-#### Creating a class component
-
-```Js
-// MyComponent.js
-import React, { Component } from 'react';
-
-class MyComponent extends Component {
-  render() {
-    return (
-      <div>This is my component.</div>
-    );
-  }
-}
-export default MyComponent;
+```
+import 'bootstrap/dist/css/bootstrap.min.css';
 ```
 
-#### Functional component
+### installation with cdn
 
-> A functional component is basically a JavaScript/ES6 function that returns a React element (JSX). According to React's official docs.
+#### Import Css file
 
-#### Creating a Functional component
-
-```Js
-import React from 'react';
-
-function UserProfile() {
-  return (
-      <div className="UserProfile">
-        <div>Hello</div>
-        <div>World</div>
-     </div>
-  );
-}
-export default UserProfile;
+```Html
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 ```
 
-#### Making an Interactive Component
+#### Import js file
 
-#### Embed an internal component
+```Html
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+```
 
-```Js
-import React from 'react';
-import UserAvatar from "./UserAvatar";
+### [React Taillwind](https://tailwindcss.com/docs/guides/create-react-app)
 
-export default function UserProfile() {
-  return (
-      <div className="UserProfile">
-        <UserAvatar />
-        <UserAvatar />
-      </div>
-  );
+#### install with cdn
+
+> Add the CDN script tag to the <head> of your HTML file, and start using Tailwind’s utility classes to style your content.
+
+```Html
+  <script src="https://cdn.tailwindcss.com"></script>
+```
+
+#### Install with CLI
+
+1. Install Tailwind & Tailwind configaration with npm
+
+```
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
+2. Replace content line in tailwind.config.js file
+
+```
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
 }
 ```
 
-#### Embed an external component
+3. Add tailwind directives to your index.css file. Then injoy & npm run start.
 
-```Js
-import React from 'react';
-import ComponentName from 'component-name';
-
-export default function UserProfile() {
-  return (
-      <div className="UserProfile">
-        <ComponentName />
-      </div>
-  );
-}
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 ```
 
-#### Nested Components
+### [Firebase](https://firebase.google.com/)
 
-### What is react properties?
-
-<small><a href="#react-tutorial">Top</a></small>
-<small><a href="#what-is-react-hooks">Next</a></small>
-
-> It is an object which stores the value of attributes of a tag and work similar to the HTML attributes. It gives a way to pass data from one component to other components. It is similar to function arguments. Props are passed to the component in the same way as arguments passed in a function.
-
-#### Passing properties to a component
+- Create Firebase Project and register your app.
+- Install SDK
 
 ```Js
-<Student firstName="Julie" lastName="Johnson" age={23} pro={true} />
+npm install firebase
 ```
 
-#### Accessing the properties from a component
+- Initialize Firebase in your app and create a Firebase App object.
+- Initialize Firebase auth from firebase/auth.
 
 ```Js
-import React from "react";
-
-export default function Student(props) {
-  return (
-    <h1>
-      {props.firstName} {props.lastName} is {props.age}.
-    </h1>
-  )
-}
+import { getAuth } from "firebase/auth";
+const auth = getAuth(app)
 ```
 
-#### Default Props value
+### [React Firebase Hooks](https://github.com/CSFrequency/react-firebase-hooks)
 
 ```Js
-const Person = ({name, age, children}) => {
-    return (
-        <h1>Name: {name} Age: {age}</h1>
-        <p>{children}</p>
-    )
-}
-
-Person.defaultProps = {
-    name: 'No name',
-    age: 0,
-}
+npm install --save react-firebase-hooks
 ```
 
-#### Props object destructuring
-
-### What is react hooks?
-
-<small><a href="#react-tutorial">Top</a></small>
-<small><a href="#what-is-react-state">Next</a></small>
-
-[useState](#usestate) | [useEffect](#useeffect) | [useRef](#useref) | [useCallback](#usecallback) | [useMemo](#usememo) | [useContext](#usecontext) | [useReducer](#usereducer) | [Custom Hooks](#custom-hooks)
-
-#### useState
-
-#### useEffect
-
-#### useRef
-
-#### useCallback
-
-#### useMemo
-
-#### useContext
-
-#### useReducer
-
-#### Custom Hooks
-
-### What is react state?
-
-<small><a href="#react-tutorial">Top</a></small>
-<small><a href="what-is-react-routing">Next</a></small>
-
-> State is a plain JavaScript object used by React to represent an information about the component's current situation. It's managed in the component (just like any variable declared in a function).
-
-#### React state
+### [React hooks form](https://react-hook-form.com/)
 
 ```Js
-import React, { useState } from "react";
-
-export default function Hello(props) {
-  let [name, setName] = useState("Julie");
-  function updateName() {
-    let newName = prompt("What is your name?");
-    setName(newName);
-  }
-
-  return (
-    <h1>
-      {name}
-    </h1>
-    <button onClick={updateName}>
-      Update name
-    </button>
-  );
-}
+npm install react-hook-form
 ```
 
-### What is react routing?
-
-<small><a href="#react-tutorial">Top</a></small>
-<small><a href="#what-is-event-in-react">Next</a></small>
-
-> React Router is a standard library for routing in React. It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL.
-
-### What is event in react?
-
-<small><a href="#react-tutorial">Top</a></small>
-<small><a href="#add-css-in-react-jsx">Next</a></small>
-
-> An event is an action that could be triggered as a result of the user action or system generated event.
-
-#### Event listener
+### [React Icons](https://react-icons.github.io/react-icons/)
 
 ```Js
-import React from "react";
-
-export default function Hello() {
-  function handleClick(event) {
-    event.preventDefault();
-    alert("Hello World");
-  }
-
-  return (
-    <a href="/" onClick={handleClick}>
-      Say Hi
-    </a>
-  );
-}
+npm install react-icons --save
 ```
 
-### Add css in react jsx
+- import react icons
 
-<small><a href="#react-tutorial">Top</a></small>
+```Js
+import { FaBeer } from 'react-icons/fa';
+```
+
+### [react-hot-toast](https://react-hot-toast.com/)
+
+```Js
+npm install react-hot-toast
+```
+
+### [React Recharts](https://recharts.org/en-US/)
+
+```
+npm install recharts
+```
+
+### [Server setup with mongodb atlas](https://www.mongodb.com/atlas/database)
+
+[mongodb doc](https://www.mongodb.com/docs/drivers/node/current/)
+
+- Create folder
+- npm init
+- Creacte index.js file
+- Add some script on pakage.json file
+
+```Js
+"start":"node index.js",
+"start-dev":"nodemon index.js"
+```
+
+- Create MongoDB Atlas Account with 5 steeps
+
+  1. sign up. with google access.
+  2. create cluster.
+  3. Create user & password.
+  4. Network Access --> ip address: allow all.
+  5. database > Connect > code copy paste in index.js
+
+### [Express](https://expressjs.com/)
+
+```Js
+npm install express
+```
+
+### [Nodemon](https://www.npmjs.com/package/nodemon)
+
+```Js
+npm install -g nodemon
+```
+
+### [Cors](http://expressjs.com/en/resources/middleware/cors.html)
+
+```Js
+npm install cors
+```
+
+### [Mongodb](https://www.mongodb.com/docs/drivers/node/current/)
+
+```Js
+npm install mongodb
+```
+
+### [dotenv](https://www.npmjs.com/package/dotenv)
+
+```Js
+npm install dotenv --save
+```
+
