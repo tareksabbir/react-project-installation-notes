@@ -3,7 +3,7 @@
 02. Setup and Installation
 03. Create React App
 
-#JSX
+##JSX
 01. JSX Element
 02. Javascript in JSX
 02. JSX Expressions
@@ -11,7 +11,7 @@
 04. JSX Functions
 05. JSX Conditional rendering
 
-#Components
+##Components
 01. React component type.
 02. Class Components
 03. Functional component
@@ -23,13 +23,13 @@
 09. Nested Components
 10. Css in a React Component
 
-#Props
+##Props
 01. Children Props
 02. Default Props value
 03. Props object destructuring
 04. Click Event
 
-#Hooks
+##Hooks
 01. useState Hook
 02. useState with object
 03. setState functional form
@@ -43,7 +43,7 @@
 11. useReducer
 12. custom hooks
 
-#Loops
+##Loops
 01. looping through an array
 02. Looping through an array of objects
 #Event
